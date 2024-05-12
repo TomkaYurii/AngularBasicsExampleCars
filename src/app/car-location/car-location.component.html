@@ -1,0 +1,6 @@
+<section class = "listing">
+  <img class="listing-photo" [src]="carLocation.photo">
+  <h2 class = "listing-heading"> {{carLocation.name}} </h2>
+  <p class ="listing-location"> {{carLocation.city}} in {{carLocation.state}} district </p>
+  <a [routerLink]="['/details', carLocation.id]">Learn More</a>
+</section>
